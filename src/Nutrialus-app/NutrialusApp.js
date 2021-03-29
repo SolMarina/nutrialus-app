@@ -8,7 +8,7 @@ export const NutrialusApp = () => {
     const { loading, data } = useFetch(`https://0q27loouph.execute-api.us-east-1.amazonaws.com/`);
     const { name, phone, email, image } = !!data && data;
     const next = () => {
-        window.location.replace('https://solmarina.github.io/nutrialus-app/');
+        window.location.replace('');
 
     }
     return (
