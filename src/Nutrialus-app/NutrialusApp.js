@@ -43,7 +43,6 @@ export const NutrialusApp = () => {
                                             <tr>
                                                 <th scope="row"><i className="bi bi-telephone-fill" style={{ color: '#f87113' }} ></i>  Número de Teléfono</th>
                                                 <td>{phone}</td>
-
                                             </tr>
                                             <tr>
                                                 <th scope="row"><i className="bi bi-envelope-fill" style={{ color: '#f87113' }} ></i>  Mail</th>
