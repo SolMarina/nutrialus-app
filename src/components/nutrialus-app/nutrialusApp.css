@@ -1,0 +1,94 @@
+
+ .nutrialus{
+    display: flex;
+    
+    
+}
+.box{
+   padding:80px
+   
+}
+
+ 
+.info{
+    display: flex;
+    flex-flow: row; 
+    width: 100%; 
+    padding: 30px;
+    box-shadow: 5px 5px 8px grey;
+    background-color: whitesmoke;
+    align-items: center;
+    border-radius: 30px;
+   
+}
+
+
+.img{
+    display: flex;
+    flex-flow: column;
+    padding-left: 80px;
+    padding-right: 50px;
+    padding-bottom: 60px;
+    align-items: center;
+}
+
+.imgP{
+    border-radius: 30px;
+}
+.btnorange{
+    background-color:#F69E66;
+
+    color: white;
+    border-color: white;
+    border-radius: 5px;
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    .nutrialus{
+        display: flex;
+      
+        
+    }
+    .box{
+        padding:10px
+       
+    }
+    
+     
+    .info{
+        display: flex;
+        flex-flow: column; 
+        width: 100%; 
+        padding:10px;
+        box-shadow: 5px 5px 8px grey;
+        background-color: whitesmoke;
+        align-items: center;
+        border-radius: 10px;
+        margin-top: 60px;
+       
+    }
+    
+    
+    .img{
+        display: flex;
+        flex-flow: column;
+        padding-left: 2px;
+        padding-right: 2px;
+        padding-bottom: 10px;
+        align-items: center;
+    }
+    
+    .imgP{
+        border-radius: 10px;
+        width: 100%;
+    }
+.info h2{
+    font-size: 20px;
+}
+
+.info tbody{
+    font-size: 12px;   
+}
+    
+}
