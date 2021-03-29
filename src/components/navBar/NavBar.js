@@ -1,6 +1,6 @@
 import React from "react";
+import nutri from '../../Assets/img/nutrialuslogo.png';
 import '../navBar/navBar.css';
-import nutri from '../../Assets/img/nutrialuslogo.png'
 
 
 const NavBar = () => {
@@ -14,10 +14,10 @@ const NavBar = () => {
                     </div>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#"><i class="bi bi-person-fill"></i>  Pacientes</a>
+                    <a className="nav-link" href="#"><i className="bi bi-person-fill"></i>  Pacientes</a>
                 </li>
                 <li className="nav-item">
-                    <a className="nav-link" href="#"><i class="bi bi-journals"></i>  Agenda</a>
+                    <a className="nav-link" href="#"><i className="bi bi-journals"></i>  Agenda</a>
                 </li>
             </ul>
 

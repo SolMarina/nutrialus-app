@@ -1,22 +1,20 @@
 import React from 'react';
-import useFetch from '../Hooks/useFetch'
-import NavBar from '../components/navBar/NavBar'
+import useFetch from '../Hooks/useFetch';
+import NavBar from '../components/navBar/NavBar';
 import './nutrialusApp.css'
-import 'bootstrap-icons/font/bootstrap-icons';
-
 
 export const NutrialusApp = () => {
 
     const { loading, data } = useFetch(`https://0q27loouph.execute-api.us-east-1.amazonaws.com/`);
     const { name, phone, email, image } = !!data && data;
-    const refreshPage = () => {
-        window.location.reload(false);
-    }
+    const next = () => {
+        window.location.replace(false);
 
+    }
     return (
         <div className='nutrialus'>
             <div className='navBar'>
-                <NavBar/>
+                <NavBar />
             </div>
 
             {
@@ -38,17 +36,17 @@ export const NutrialusApp = () => {
                                     <table className="table table-bordered">
                                         <tbody>
                                             <tr>
-                                                <th scope="row"> <i class="bi bi-person-circle"></i> Nombre</th>
+                                                <th scope="row"> <i className="bi bi-person-circle" style={{ color: '#f87113' }} ></i> Nombre</th>
                                                 <td>{name}</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row"><i class="bi bi-telephone-fill"></i>  Número de Teléfono</th>
+                                                <th scope="row"><i className="bi bi-telephone-fill" style={{ color: '#f87113' }} ></i>  Número de Teléfono</th>
                                                 <td>{phone}</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row"><i class="bi bi-envelope-fill"></i>  Mail</th>
+                                                <th scope="row"><i className="bi bi-envelope-fill" style={{ color: '#f87113' }} ></i>  Mail</th>
                                                 <td colSpan="2">{email}</td>
 
                                             </tr>
@@ -60,7 +58,7 @@ export const NutrialusApp = () => {
                                         <img className='imgP' src={image} />
                                     </div>
                                     <br></br>
-                                    <button onClick={refreshPage} className='btnorange'>Siguiente</button>
+                                    <button onClick={next} className='btnorange'>Siguiente</button>
                                 </div>
 
                             </div>
@@ -79,5 +77,4 @@ export const NutrialusApp = () => {
 
 
 }
-
 export default NutrialusApp
