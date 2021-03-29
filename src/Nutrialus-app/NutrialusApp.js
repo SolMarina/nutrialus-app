@@ -1,7 +1,9 @@
 import React from 'react';
-import useFetch from '../../hooks/useFetch'
-import NavBar from '../navBar/NavBar';
-import '../nutrialus-app/nutrialusApp.css'
+import useFetch from '../Hooks/useFetch'
+import NavBar from '../components/navBar/NavBar'
+import './nutrialusApp.css'
+import 'bootstrap-icons/font/bootstrap-icons';
+
 
 export const NutrialusApp = () => {
 
@@ -13,9 +15,10 @@ export const NutrialusApp = () => {
 
     return (
         <div className='nutrialus'>
-            
-            <NavBar/>
-            
+            <div className='navBar'>
+                <NavBar/>
+            </div>
+
             {
                 loading
                     ?
@@ -35,18 +38,18 @@ export const NutrialusApp = () => {
                                     <table className="table table-bordered">
                                         <tbody>
                                             <tr>
-                                                <th scope="row">Nombre</th>
+                                                <th scope="row"> <i class="bi bi-person-circle"></i> Nombre</th>
                                                 <td>{name}</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">Número de Teléfono</th>
-                                                <td>{email}</td>
+                                                <th scope="row"><i class="bi bi-telephone-fill"></i>  Número de Teléfono</th>
+                                                <td>{phone}</td>
 
                                             </tr>
                                             <tr>
-                                                <th scope="row">Mail</th>
-                                                <td colspan="2">{phone}</td>
+                                                <th scope="row"><i class="bi bi-envelope-fill"></i>  Mail</th>
+                                                <td colSpan="2">{email}</td>
 
                                             </tr>
                                         </tbody>
@@ -57,19 +60,18 @@ export const NutrialusApp = () => {
                                         <img className='imgP' src={image} />
                                     </div>
                                     <br></br>
-                                    <button onClick={refreshPage} className='btnorange'>Primary</button>
+                                    <button onClick={refreshPage} className='btnorange'>Siguiente</button>
                                 </div>
-                                
+
                             </div>
-                            
-                            
+
                         </div>
-                        
+
 
                     )
             }
 
-           
+
 
         </div>
 

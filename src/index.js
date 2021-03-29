@@ -1,17 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { NutrialusApp } from './components/nutrialus-app/NutrialusApp';
-import '../src/index.css'
+import NutrialusApp from './Nutrialus-app/NutrialusApp';
+import './index.css';
+
 
 
 
 ReactDOM.render(
-  <div className='bla'>
-    
-    
 
-  <NutrialusApp />
-  </div>,
+  <NutrialusApp/>,
+
   document.getElementById('root')
 );
 

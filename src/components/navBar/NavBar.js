@@ -1,5 +1,6 @@
 import React from "react";
 import '../navBar/navBar.css';
+import nutri from '../../Assets/img/nutrialuslogo.png'
 
 
 const NavBar = () => {
@@ -8,11 +9,16 @@ const NavBar = () => {
         <div>
             <ul className="nav">
                 <li className="nav-item">
-                    <a className="nav-link active" href="#">Gana</a>
+                    <div className='nutribox'>
+                        <img className='nutrilogo' src={nutri} />
+                    </div>
                 </li>
-                <a className="nav-link active" href="https://ayuda.somosmach.com/hc/es">
-                    {/* <img className="helpImg" src={iconHelp}></img> */}
-                </a>
+                <li className="nav-item">
+                    <a className="nav-link" href="#"><i class="bi bi-person-fill"></i>  Pacientes</a>
+                </li>
+                <li className="nav-item">
+                    <a className="nav-link" href="#"><i class="bi bi-journals"></i>  Agenda</a>
+                </li>
             </ul>
 
         </div>
